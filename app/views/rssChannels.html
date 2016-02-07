@@ -1,0 +1,24 @@
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Название</th>
+      <th>URL</th>
+      <th>Состояние</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="rssChannel in rssChannels">
+      <td>{{rssChannel.id}}</td>
+      <td>{{rssChannel.name}}</td>
+      <td>{{rssChannel.url}}</td>
+      <td>{{rssChannel.active}}</td>
+      <td>
+        <a href="" ng-click="edit(rssChannel)" title="Изменить">
+          <span class="glyphicon glyphicon-edit"></span>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

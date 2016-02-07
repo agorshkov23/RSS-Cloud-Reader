@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "out": "app/js/index.js",
+    "sourceMap": true
+  }
+}
